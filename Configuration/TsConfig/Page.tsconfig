@@ -1,0 +1,18 @@
+mod {
+  wizards.newContentElement.wizardItems.slubprofilemessages {
+    after = common
+    header = LLL:EXT:slub_profile_messages/Resources/Private/Language/locallang_backend.xlf:plugin.title
+
+    elements {
+      slubprofilemessages_messagelist {
+        iconIdentifier = slubprofilemessages-wizard-messagelist
+        iconOverlay = slubprofilemessages-overlay-extension
+        title = LLL:EXT:slub_profile_messages/Resources/Private/Language/locallang_backend.xlf:plugin.messagelist.title
+        description = LLL:EXT:slub_profile_messages/Resources/Private/Language/locallang_backend.xlf:plugin.messagelist.description
+        tt_content_defValues.CType = slubprofilemessages_messagelist
+      }
+    }
+
+    show := addToList(slubprofilemessages_messagelist)
+  }
+}

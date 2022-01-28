@@ -1,0 +1,3 @@
+plugin.tx_slubprofilemessages {
+  persistence.storagePid = 18
+}
