@@ -10,7 +10,7 @@ defined('TYPO3_MODE') || die();
     $GLOBALS['TCA']['pages']['columns']['module']['config']['items'][] = [
         $ll . ':plugin.title',
         $extensionKey,
-        $extensionName . '-pagetree-userfolder'
+        $extensionName . '-pagetree-messagefolder'
     ];
 })(
     \Slub\SlubProfileMessages\Utility\ConstantsUtility::EXTENSION_KEY,
