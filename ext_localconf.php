@@ -23,3 +23,7 @@ ExtensionUtility::configurePlugin(
     ],
     ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT
 );
+
+// Register own RTE preset
+$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['slubProfileMessage'] =
+    'EXT:slub_profile_messages/Configuration/RTE/Message.yaml';

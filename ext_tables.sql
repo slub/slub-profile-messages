@@ -7,6 +7,7 @@ CREATE TABLE tx_slubprofilemessages_domain_model_message (
 
     title varchar(255) NOT NULL,
     content text,
+    categories int(11) unsigned DEFAULT 0 NOT NULL,
 
     tstamp int(11) unsigned DEFAULT 0 NOT NULL,
     crdate int(11) unsigned DEFAULT 0 NOT NULL,
@@ -20,3 +21,11 @@ CREATE TABLE tx_slubprofilemessages_domain_model_message (
     PRIMARY KEY (uid),
     KEY parent (pid),
 );
+
+#
+# Table structure for table 'sys_category'
+#
+CREATE TABLE sys_category (
+    tx_slubprofilemessages_code varchar(255) DEFAULT '' NOT NULL,
+);
+

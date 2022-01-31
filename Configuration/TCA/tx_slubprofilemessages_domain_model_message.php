@@ -12,6 +12,11 @@ $ll = [
     'slubProfileMessages' => 'LLL:EXT:slub_profile_messages/Resources/Private/Language/locallang_db.xlf'
 ];
 
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+    'tx_slubprofilemessages_domain_model_message',
+    'categories'
+);
+
 return [
     'ctrl' => [
         'title' => $ll['slubProfileMessages'] . ':tx_slubprofilemessages_domain_model_message',
@@ -35,7 +40,7 @@ return [
         'translationSource' => 'l10n_source',
         'origUid' => 't3_origuid',
         'versioningWS' => true,
-        'searchFields' => 'title, content',
+        'searchFields' => 'title, content, categories',
         'typeicon_classes' => [
             'default' => 'slubprofilemessages-model-message'
         ],
@@ -45,6 +50,8 @@ return [
             'showitem' => '
                 --div--;' . $ll['core']['tabs'] . ':general,
                     title, content,
+                --div--;' . $ll['core']['tabs'] . ':categories,
+                    categories,
                 --div--;' . $ll['core']['tabs'] . ':language,
                     --palette--;;language,
                 --div--;' . $ll['core']['tabs'] . ':access,
@@ -178,9 +185,12 @@ return [
             'label' => $ll['slubProfileMessages'] . ':tx_slubprofilemessages_domain_model_message.content',
             'config' => [
                 'type' => 'text',
-                'rows' => 5,
-                'cols' => 30,
-                'eval' => 'trim',
+                'enableRichtext' => true
+            ]
+        ],
+        'categories' => [
+            'config' => [
+                'type' => 'category'
             ]
         ],
     ]

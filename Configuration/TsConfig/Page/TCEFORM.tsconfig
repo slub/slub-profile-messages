@@ -1,0 +1,15 @@
+TCEFORM {
+  sys_category {
+    tx_slubprofilemessages_code.disabled = 1
+  }
+}
+
+# Folder with messages
+[page["uid"] == 18]
+  TCEFORM {
+    sys_category {
+      tx_slubprofilemessages_code.disabled = 0
+      parent.config.treeConfig.rootUid = 2
+    }
+  }
+[END]

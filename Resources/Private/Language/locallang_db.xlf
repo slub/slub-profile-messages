@@ -17,6 +17,14 @@
 			<trans-unit id="tx_slubprofilemessages_domain_model_message.content" resname="tx_slubprofilemessages_domain_model_message.content">
 				<source>Content</source>
 			</trans-unit>
+
+			<!--
+				Category
+			-->
+
+			<trans-unit id="sys_category.tx_slubprofilemessages_code" resname="sys_category.tx_slubprofilemessages_code">
+				<source>Code</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

@@ -20,6 +20,15 @@
 				<source>Content</source>
 				<target>Content</target>
 			</trans-unit>
+
+			<!--
+				Category
+			-->
+
+			<trans-unit id="sys_category.tx_slubprofilemessages_code" resname="sys_category.tx_slubprofilemessages_code">
+				<source>Code</source>
+				<target>Code</target>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
