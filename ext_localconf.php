@@ -13,7 +13,7 @@ ExtensionManagementUtility::addPageTSConfig(
 
 // Configure plugin - message list
 ExtensionUtility::configurePlugin(
-    'SlubProfileAccount',
+    'SlubProfileMessages',
     'MessageList',
     [
         MessageController::class => 'list'

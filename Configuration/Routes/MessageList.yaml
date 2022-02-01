@@ -1,0 +1,17 @@
+routeEnhancers:
+  SlubMessagesMessageList:
+    type: Extbase
+    limitToPages: [20]
+    extension: SlubProfileMessages
+    plugin: MessageList
+    routes:
+      - routePath: '/{categorySlug}'
+        _controller: 'Message::list'
+        _arguments:
+          categorySlug: 'category'
+    defaultController: 'Message::list'
+    aspects:
+      categorySlug:
+        type: PersistedAliasMapper
+        tableName: 'sys_category'
+        routeFieldName: 'tx_slubprofilemessages_code'

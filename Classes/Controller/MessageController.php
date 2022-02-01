@@ -12,7 +12,7 @@ declare(strict_types=1);
 namespace Slub\SlubProfileMessages\Controller;
 
 use Psr\Http\Message\ResponseInterface;
-use Slub\SlubProfileAccount\Mvc\View\JsonView;
+use Slub\SlubProfileMessages\Mvc\View\JsonView;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
 class MessageController extends ActionController

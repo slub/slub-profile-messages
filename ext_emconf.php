@@ -2,7 +2,7 @@
 
 $EM_CONF['slub_profile_messages'] = [
     'title' => 'SLUB profile messages',
-    'description' => 'SLUB profile messages account extension for TYPO3',
+    'description' => 'SLUB profile messages extension for TYPO3',
     'category' => 'fe',
     'author' => 'Andreas Pfeiffer',
     'author_email' => 'andreas.pfeiffer@e-pixler.com',
