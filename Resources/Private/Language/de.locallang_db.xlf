@@ -20,6 +20,10 @@
 				<source>Content</source>
 				<target>Content</target>
 			</trans-unit>
+			<trans-unit id="tx_slubprofilemessages_domain_model_message.datetime" resname="tx_slubprofilemessages_domain_model_message.datetime">
+				<source>Date</source>
+				<target>Datum</target>
+			</trans-unit>
 
 			<!--
 				Category

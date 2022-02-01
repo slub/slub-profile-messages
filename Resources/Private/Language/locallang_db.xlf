@@ -17,6 +17,9 @@
 			<trans-unit id="tx_slubprofilemessages_domain_model_message.content" resname="tx_slubprofilemessages_domain_model_message.content">
 				<source>Content</source>
 			</trans-unit>
+			<trans-unit id="tx_slubprofilemessages_domain_model_message.datetime" resname="tx_slubprofilemessages_domain_model_message.datetime">
+				<source>Date</source>
+			</trans-unit>
 
 			<!--
 				Category

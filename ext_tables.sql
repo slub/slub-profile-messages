@@ -8,6 +8,7 @@ CREATE TABLE tx_slubprofilemessages_domain_model_message (
     title varchar(255) NOT NULL,
     content text,
     categories int(11) unsigned DEFAULT 0 NOT NULL,
+    datetime int(11) unsigned DEFAULT 0 NOT NULL,
 
     tstamp int(11) unsigned DEFAULT 0 NOT NULL,
     crdate int(11) unsigned DEFAULT 0 NOT NULL,

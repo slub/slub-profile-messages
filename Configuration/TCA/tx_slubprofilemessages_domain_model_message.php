@@ -40,7 +40,7 @@ return [
         'translationSource' => 'l10n_source',
         'origUid' => 't3_origuid',
         'versioningWS' => true,
-        'searchFields' => 'title, content, categories',
+        'searchFields' => 'title, content, categories, datetime',
         'typeicon_classes' => [
             'default' => 'slubprofilemessages-model-message'
         ],
@@ -49,7 +49,7 @@ return [
         '0' => [
             'showitem' => '
                 --div--;' . $ll['core']['tabs'] . ':general,
-                    title, content,
+                    datetime, title, content,
                 --div--;' . $ll['core']['tabs'] . ':categories,
                     categories,
                 --div--;' . $ll['core']['tabs'] . ':language,
@@ -191,6 +191,24 @@ return [
         'categories' => [
             'config' => [
                 'type' => 'category'
+            ]
+        ],
+        'datetime' => [
+            'exclude' => true,
+            'l10n_mode' => 'exclude',
+            'l10n_display' => 'defaultAsReadonly',
+            'label' => $ll['slubProfileMessages'] . ':tx_slubprofilemessages_domain_model_message.datetime',
+            'config' => [
+                'type' => 'input',
+                'renderType' => 'inputDateTime',
+                'eval' => 'required,datetime',
+                'default' => 0,
+                'range' => [
+                    'lower' => mktime(0, 0, 0, date('m'), date('d'), date('Y'))
+                ],
+                'behaviour' => [
+                    'allowLanguageSynchronization' => true,
+                ]
             ]
         ],
     ]
