@@ -37,7 +37,14 @@ class JsonView extends ExtbaseJsonView
     protected array $accountConfiguration = [
         'messageList' => [
             '_descendAll' => [
-            ]
+                '_exclude' => [
+                    'pid'
+                ],
+                '_descend' => [
+                    'datetime' => [],
+                    //'categories' => [],
+                ],
+            ],
         ],
     ];
 

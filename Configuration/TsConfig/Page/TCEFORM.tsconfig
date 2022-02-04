@@ -6,6 +6,7 @@ TCEFORM {
 
 # Folder with messages
 # This is not interpreted by list view -> show columns, means the column code is not selectable
+# Do not disable this column, if you want select it
 [page["uid"] == 18]
   TCEFORM {
     sys_category {

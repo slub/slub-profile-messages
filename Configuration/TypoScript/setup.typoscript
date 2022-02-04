@@ -6,4 +6,5 @@ plugin.tx_slubprofilemessages {
 
   features.skipDefaultArguments = 1
   persistence.storagePid = {$plugin.tx_slubprofilemessages.persistence.storagePid}
+  settings.message.list.limit = {$plugin.tx_slubprofilemessages.settings.message.list.limit}
 }

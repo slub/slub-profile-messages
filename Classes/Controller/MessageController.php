@@ -12,6 +12,8 @@ declare(strict_types=1);
 namespace Slub\SlubProfileMessages\Controller;
 
 use Psr\Http\Message\ResponseInterface;
+use Slub\SlubProfileMessages\Domain\Model\Category;
+use Slub\SlubProfileMessages\Domain\Repository\MessageRepository;
 use Slub\SlubProfileMessages\Mvc\View\JsonView;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
@@ -19,13 +21,26 @@ class MessageController extends ActionController
 {
     protected $view;
     protected $defaultViewObjectName = JsonView::class;
+    protected MessageRepository $messageRepository;
 
     /**
+     * @param MessageRepository $messageRepository
+     */
+    public function __construct(MessageRepository $messageRepository)
+    {
+        $this->messageRepository = $messageRepository;
+    }
+
+    /**
+     * @param Category $category
      * @return ResponseInterface
      */
-    public function listAction(): ResponseInterface
+    public function listAction(Category $category): ResponseInterface
     {
-        $messages = ['hey', 'ho'];
+        $messages = $this->messageRepository->findByCategoryUid(
+            $category->getUid(),
+            (int)$this->settings['message']['list']['limit']
+        );
 
         $this->view->setVariablesToRender(['messageList']);
         $this->view->assign('messageList', $messages);

@@ -5,13 +5,13 @@ routeEnhancers:
     extension: SlubProfileMessages
     plugin: MessageList
     routes:
-      - routePath: '/{categorySlug}'
+      - routePath: '/{categoryCode}'
         _controller: 'Message::list'
         _arguments:
-          categorySlug: 'category'
+          categoryCode: 'category'
     defaultController: 'Message::list'
     aspects:
-      categorySlug:
+      categoryCode:
         type: PersistedAliasMapper
         tableName: 'sys_category'
         routeFieldName: 'tx_slubprofilemessages_code'

@@ -1,3 +1,5 @@
 plugin.tx_slubprofilemessages {
   persistence.storagePid = 18
+  # cat=plugin.tx_slubprofilemessages/settings; type=int; label=Message list limit
+  settings.message.list.limit = 1
 }
