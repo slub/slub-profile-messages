@@ -189,6 +189,9 @@ return [
             ]
         ],
         'categories' => [
+            'exclude' => true,
+            'l10n_mode' => 'exclude',
+            'l10n_display' => 'defaultAsReadonly',
             'config' => [
                 'type' => 'category'
             ]
