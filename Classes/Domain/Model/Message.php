@@ -56,6 +56,7 @@ class Message extends AbstractEntity
      */
     public function getContent(): string
     {
+        /** @extensionScannerIgnoreLine */
         return $this->content;
     }
 
