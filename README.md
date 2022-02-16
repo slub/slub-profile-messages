@@ -37,6 +37,6 @@ Please check the routes' configuration. You have to set the matching page (limit
 
 ### 3.2 Typoscript
 
-Setup / Constant | Comment
----------------- | -------
-plugin.tx_slubprofilemessages.settings.message.list.limit | Limit the quantity of data.
+| Setup / Constant                                          | Comment                     |
+|-----------------------------------------------------------|-----------------------------|
+| plugin.tx_slubprofilemessages.settings.message.list.limit | Limit the quantity of data. |
