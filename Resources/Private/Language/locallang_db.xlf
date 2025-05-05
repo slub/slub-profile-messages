@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" datatype="plaintext" original="messages" date="2012-11-01T14:46:01Z"  product-name="slub_profile_messages">
+		<header/>
+		<body>
+
+			<!--
+				Message
+			-->
+
+			<trans-unit id="tx_slubprofilemessages_domain_model_message" resname="tx_slubprofilemessages_domain_model_message">
+				<source>Message</source>
+			</trans-unit>
+			<trans-unit id="tx_slubprofilemessages_domain_model_message.title" resname="tx_slubprofilemessages_domain_model_message.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_slubprofilemessages_domain_model_message.content" resname="tx_slubprofilemessages_domain_model_message.content">
+				<source>Content</source>
+			</trans-unit>
+			<trans-unit id="tx_slubprofilemessages_domain_model_message.datetime" resname="tx_slubprofilemessages_domain_model_message.datetime">
+				<source>Date</source>
+			</trans-unit>
+
+			<!--
+				Category
+			-->
+
+			<trans-unit id="sys_category.tx_slubprofilemessages_code" resname="sys_category.tx_slubprofilemessages_code">
+				<source>Code</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,2 +1,31 @@
-# slub-profile-messages
+# TYPO3 Extension `slub_profile_messages`
+
+[![TYPO3](https://img.shields.io/badge/TYPO3-11-orange.svg)](https://typo3.org/)
+
 SLUB profile service messages extension for TYPO3.
+
+## 1 Usage
+
+### 1.1 Installation using Composer
+
+The recommended way to install the extension is using [Composer][1].
+
+Run the following command within your Composer based TYPO3 project:
+
+```
+composer require slub/slub-profile-messages
+```
+
+## 2 Api
+
+### 2.1 Routes
+
+Please check the routes' configuration. You have to set the matching page (limitToPages). If not the routes will not work properly.
+
+### 2.2 Typoscript
+
+| Setup / Constant                                          | Comment                     |
+|-----------------------------------------------------------|-----------------------------|
+| plugin.tx_slubprofilemessages.settings.message.list.limit | Limit the quantity of data. |
+
+[1]: https://getcomposer.org/

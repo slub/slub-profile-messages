@@ -1,0 +1,4 @@
+RTE.config.tx_slubprofilemessages_domain_model_message.content {
+  preset = slubProfileMessage
+  buttons.link.options.removeItems = page,file,spec,folder
+}

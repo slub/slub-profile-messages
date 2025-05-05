@@ -1,0 +1,10 @@
+plugin.tx_slubprofilemessages {
+  mvc {
+    callDefaultActionIfActionCantBeResolved = 1
+    throwPageNotFoundExceptionIfActionCantBeResolved = 1
+  }
+
+  features.skipDefaultArguments = 1
+  persistence.storagePid = {$plugin.tx_slubprofilemessages.persistence.storagePid}
+  settings.message.list.limit = {$plugin.tx_slubprofilemessages.settings.message.list.limit}
+}
